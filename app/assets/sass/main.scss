@@ -1,0 +1,24 @@
+//import utilities
+
+// import pages section
+
+
+//import components 
+@import "./components/header.scss";
+
+// import utilities
+@import "./util/variables";
+@import "./util/responsive";
+@import "./util/mixins";
+
+
+
+/*------------------------------------*\
+    Body Style
+\*------------------------------------*/
+
+body {
+    font-family: $font--primary;
+    font-weight: 400;
+    color: $font-color--primary;
+}

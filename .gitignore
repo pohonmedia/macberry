@@ -1,5 +1,6 @@
 ##Ignore below files for production
 node_modules/
+others/
 *.lock
 *.log
 *.zip

@@ -1,0 +1,114 @@
+// import utilities
+@import "../util/variables";
+
+/*------------------------------------*\
+    Header Compoents
+\*------------------------------------*/
+
+.header-area {
+    padding: 30px 0;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+}
+
+.header-area.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(156, 156, 156, 0.25);
+    z-index: 999;
+    padding: 10px 0;
+    transition: all 0.4s ease-out 0s;
+}
+
+.header-area .navbar {
+    padding: 0;
+}
+
+.header-area .navbar .navbar-brand {
+    padding-bottom: 10px;
+}
+
+.header-area .navbar .navbar-toggler .bar-icon {
+    width: 30px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: $color--primary;
+    display: block;
+    position: relative;
+    transition: all 0.4s ease-out 0s;
+}
+
+.header-area .navbar .navbar-toggler.active .bar-icon:nth-child(1) {
+    top: 7px;
+    transform: rotate(45deg);
+}
+
+.header-area .navbar .navbar-toggler.active .bar-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.header-area .navbar .navbar-toggler.active .bar-icon:nth-child(3) {
+    top: -7px;
+    transform: rotate(135deg);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-area .navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        padding: 10px;
+    }
+}
+
+.header-area .navbar .navbar-nav .nav-item {
+    margin-left: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .navbar .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-area .navbar .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+.header-area .navbar .navbar-nav .nav-item a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c1c1c1;
+    transition: all 0.4s ease-out 0s;
+}
+
+.header-area .navbar .navbar-nav .nav-item.active a,
+.header-area .navbar .navbar-nav .nav-item:hover a {
+    color: $color--primary;
+    text-decoration: none;
+}

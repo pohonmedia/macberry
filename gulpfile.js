@@ -34,7 +34,7 @@ var ASSETS = {
 var COMPILE = {
     SRC: './app/pages/index.njk',
     TMP: './app/template/',
-    DST: './app'
+    DST: './app/'
 };
 
 //make structural folder
@@ -146,7 +146,7 @@ function watching() {
         startPath: './app/',
         port: 3000
     });
-    watch('./app/assets/sass/**/*.scss', minify);
+    watch('./app/assets/sass/main.scss', minify);
     watch(COMPILE.SRC, nunjucks).on('change', browserSync.reload);
     // watch(COMPILE.TMP, nunjucks).on('change', browserSync.reload);
 };
