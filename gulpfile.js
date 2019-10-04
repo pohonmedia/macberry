@@ -26,7 +26,7 @@ var ASSETS = {
     CSS: './app/assets/css',
     JS: './app/assets/js',
     IMG: './app/assets/img',
-    SASS: './app/assets/sass/**/*.scss',
+    SASS: './app/assets/sass/main.scss',
     TESTING: './app/sandbox/_test'
 }
 
