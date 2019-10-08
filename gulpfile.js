@@ -14,11 +14,14 @@ const sourcemaps = require('gulp-sourcemaps');
 
 //asset css
 var bootstrapCSS = './node_modules/bootstrap/dist/css/bootstrap.min.css';
+var slickCSS = './node_modules/slick-carousel/slick/slick.css';
+var animate = './node_modules/animate.css/animate.css';
 
 //asset js
 var bootstrapJS = './node_modules/bootstrap/dist/js/bootstrap.min.js';
-var jqueryJS = './node_modules/jquery/dist/jquery.slim.min.js';
+var jqueryJS = './node_modules/jquery/dist/jquery.min.js';
 var popperJS = './node_modules/popper.js/dist/umd/popper.min.js';
+var slickJS = './node_modules/slick-carousel/slick/slick.js';
 
 //assets dir
 var ASSETS = {
@@ -61,7 +64,7 @@ function folder() {
 
 // moving css
 function css() {
-    return src([bootstrapCSS])
+    return src([bootstrapCSS, animate])
         .pipe(plumber({
             errorHandler: function (err) {
                 notify.onError({
