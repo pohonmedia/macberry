@@ -8,6 +8,9 @@
         <!-- Required font -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/212416152f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1/slick/slick-theme.min.css,npm/slick-carousel@1/slick/slick.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
 
         <!-- Plugin CSS -->
         <link rel="stylesheet" href="./assets/css/plugin.min.css">
@@ -19,6 +22,10 @@
     </head>
 
     <body>
+
+        <!-- preloader -->
+
+        <!-- preloader -->
 
         <!-- Navigation start here -->
 
@@ -60,9 +67,8 @@
                                 </ul>
                                 <!-- navbar nav -->
                                 <form class="form-inline my-2 my-lg-0 ml-4">
-                                    <button class="btn btn-primary my-2 my-sm-0 text-capitalize" type="submit" style="letter-spacing:0.5px;">
-                                        <i class="far fa-user"></i>
-                                        &nbsp; Masuk / daftar
+                                    <button class="c-btn-primary text-capitalize" type="submit" style="letter-spacing:0.5px;">
+                                        Masuk / daftar
                                     </button>
                                 </form>
                             </div>
@@ -79,14 +85,124 @@
 
         <!-- Content block start here -->
         
-    <div class="container">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ea aliquam, assumenda voluptas, sequi culpa error consequatur odio incidunt laudantium sit voluptatem, cupiditate delectus voluptate magnam? Corrupti qui culpa quaerat?
-    </div>
+
+    <!-- slider start here -->
+    <section id="home" class="slider-area pt-100" style="margin-top:20px;">
+        <div class="container-fluid position-relative">
+            <div class="slider-active">
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center ">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-none d-md-block">
+                                    <img src="/app/assets/img/1.jpg" alt="Slider">
+                                    <div class="slider-discount-tag">
+                                        <p>gratis
+                                            <br>
+                                            pengiriman</p>
+                                    </div>
+                                </div>
+                                <!-- slider product image -->
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        Secondhand Macbook 12 inch MLHA2 Early 2016 Promo.
+                                    </h1>
+                                    <p class="mb-30 mt-30 mr-50" data-animation="fadeInUp" data-delay="0.9s" style="letter-spacing:1px; line-height:1.5em;">
+                                        Dunia design, fotografi dan grafis identik dengan mantengin layar berjam-jam bahkan mungkin lembur semalam suntuk, karena pertimbangan itulah di perlukan mac yang memiliki kualitas layar yang jernih dan lincah untuk di bawa beraktivitas, seperti bertemu serta presentasi ke klien.
+                                    </p>
+                                    <a class="c-btn-primary" href="#" data-animation="fadeInUp" data-delay="1.5s">
+                                        info lebih lanjut
+                                    </a>
+                                </div>
+                                <!-- slider product content -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- single slider -->
+
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center ">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-none d-md-block">
+                                    <img src="/app/assets/img/2.jpg" alt="Slider">
+                                    <div class="slider-discount-tag">
+                                        <p>50% disc</p>
+                                    </div>
+                                </div>
+                                <!-- slider product image -->
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        iPhone 6s Plus - Disc 50%
+                                    </h1>
+                                    <p class="mb-30 mt-30 mr-50" data-animation="fadeInUp" data-delay="0.9s" style="letter-spacing:1px; line-height:1.5em;">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit optio pariatur, vitae vero cum dolorem omnis. Rerum, voluptatem eaque velit quam sapiente natus obcaecati, vel praesentium minima ducimus veniam debitis.
+                                    </p>
+                                    <a class="c-btn-primary" href="#" data-animation="fadeInUp" data-delay="1.5s">
+                                        lihat produk
+                                    </a>
+                                </div>
+                                <!-- slider product content -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- single slider -->
+
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center ">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-none d-md-block">
+                                    <img src="/app/assets/img/3.jpg" alt="Slider">
+                                    <div class="slider-discount-tag">
+                                        <p>80% disc</p>
+                                    </div>
+                                </div>
+                                <!-- slider product image -->
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        iPhone SE - Disc 80%
+                                    </h1>
+                                    <p class="mb-30 mt-30 mr-50" data-animation="fadeInUp" data-delay="0.9s" style="letter-spacing:1px; line-height:1.5em;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laboriosam commodi obcaecati molestiae amet nam rerum mollitia beatae praesentium nemo eaque corrupti voluptatem iure, laudantium ducimus quae quam facilis explicabo!
+                                    </p>
+                                    <a class="c-btn-primary" href="#" data-animation="fadeInUp" data-delay="1.5s">
+                                        lihat produk
+                                    </a>
+                                </div>
+                                <!-- slider product content -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- single slider -->
+            </div>
+
+        </div>
+        <!-- container fluid -->
+    </section>
+    <!-- slider end here -->
+
 
         <!-- Content block end here -->
 
         <!-- Main Javascript -->
         <script src="./assets/js/plugin.min.js"></script>
         <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
     </body>
 </html>
