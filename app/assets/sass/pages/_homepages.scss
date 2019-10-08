@@ -1,10 +1,13 @@
 // import utilities
-@import "./util/variables";
+@import "../util/variables";
 
 /*------------------------------------*\
     Slider
 \*------------------------------------*/
 
+.slider-bg {
+    background-color: #f3f3f3 !important;
+}
 
 .single-slider {
 
@@ -34,4 +37,32 @@
 
     }
 
+}
+
+/*------------------------------------*\
+    About Us
+\*------------------------------------*/
+
+.about-us {
+
+    h5 {
+        color: $color--primary !important;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    i {
+        color: $color--primary !important;
+    }
+
+    &-card {
+        background-color: #ffffff !important;
+        border: none !important;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+    }
 }
