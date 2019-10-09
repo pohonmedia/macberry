@@ -142,10 +142,29 @@
         content: "";
         background-color: $color--primary;
         /*perfect round curve*/
-        min-height: 300px;
+        min-height: 400px;
         /*dimension of the shape*/
         position: absolute;
         min-width: 100%;
+    }
+
+}
+
+/*------------------------------------*\
+    Products Category
+\*------------------------------------*/
+
+.c-product-category {
+
+    margin-top: 100px;
+
+    img {
+        width: 100%;
+        min-height: 350px;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 15px 0px;
     }
 
 }
