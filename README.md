@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/yarn.svg)](https://badge.fury.io/js/yarn)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/98e2d309-a6ad-451a-874c-5a5d0a8d00b7/deploy-status)](https://app.netlify.com/sites/macberry-dev/deploys)
+![Dependencies](https://david-dm.org/pohonmedia/macberry.svg)
 
 >  This is macberry website front end repository. 📦
 
