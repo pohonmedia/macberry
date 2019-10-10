@@ -1,17 +1,15 @@
-//import utilities
-
 // import pages section
-
+@import "./pages/homepages";
 
 //import components 
-@import "./components/header";
+@import "./components/plugins";
 @import "./components/buttons";
 
 // import utilities
 @import "./util/variables";
 @import "./util/responsive";
 @import "./util/mixins";
-
+@import "./util/spacing";
 
 
 /*------------------------------------*\

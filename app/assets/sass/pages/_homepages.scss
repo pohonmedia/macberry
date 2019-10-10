@@ -1,0 +1,220 @@
+// import utilities
+@import "../util/variables";
+
+/*------------------------------------*\
+    Slider
+\*------------------------------------*/
+
+.slider-bg {
+    background-color: #f3f3f3 !important;
+}
+
+.single-slider {
+
+    .slider {
+
+        &-bg {
+            border-radius: 50px;
+        }
+
+        &-discount-tag {
+            width: 150px !important;
+            height: 150px !important;
+            background-color: $color--primary !important;
+            text-transform: uppercase !important;
+        }
+
+        &-product-image {
+            img {
+                border-radius: 20px;
+                min-height: 450px;
+                object-fit: cover;
+            }
+        }
+
+        &-title {
+            font-size: 40px !important;
+            margin-top: -50px;
+        }
+
+    }
+
+}
+
+/*------------------------------------*\
+    About Us
+\*------------------------------------*/
+
+.about-us {
+
+    h5 {
+        color: $color--primary !important;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    i {
+        color: $color--primary !important;
+    }
+
+    &-card {
+        background-color: #ffffff !important;
+        border: none !important;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+    }
+}
+
+/*------------------------------------*\
+    Blog
+\*------------------------------------*/
+
+.c-blog {
+
+    img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .blog-content {
+        margin-top: -10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .single-blog {
+        border-radius: 15px;
+    }
+
+    .badge {
+        font-size: 12px !important;
+        font-style: normal !important;
+    }
+
+
+}
+
+/*------------------------------------*\
+    Products
+\*------------------------------------*/
+
+.c-product {
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    h3 {
+        color: $font-color--secondary;
+    }
+
+    .product-content {
+        margin-top: -10px;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .single-product {
+        border-radius: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    &:before {
+        margin-top: 50px;
+        content: "";
+        background-color: $color--primary;
+        /*perfect round curve*/
+        min-height: 400px;
+        /*dimension of the shape*/
+        position: absolute;
+        min-width: 100%;
+    }
+
+}
+
+/*------------------------------------*\
+    Products Category
+\*------------------------------------*/
+
+.c-product-category {
+
+    margin-top: 100px;
+
+    img {
+        width: 100%;
+        min-height: 350px;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 15px 0px;
+
+        // &:after {
+        //     content: "";
+        //     z-index: 1;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(0, 0, 0, 0.5);
+        // }
+
+        // &:before {
+        //     content: "";
+        //     z-index: 1;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(0, 0, 0, 0.5);
+        // }
+
+        p {}
+    }
+
+}
+
+/*------------------------------------*\
+    Promo
+\*------------------------------------*/
+
+.c-promo {
+    margin-top: 30px;
+
+    img {
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.c-footer {
+    background-color: $color--primary;
+    color: $font-color--primary;
+
+    h5,
+    p,
+    a,
+    span {
+        color: $font-color--secondary !important;
+    }
+}
