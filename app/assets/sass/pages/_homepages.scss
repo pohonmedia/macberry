@@ -108,7 +108,7 @@
     Products
 \*------------------------------------*/
 
-.c-product {
+.c-product-homepage {
 
     img {
         width: 100%;
@@ -200,21 +200,5 @@
         max-height: 350px;
         object-fit: cover;
         border-radius: 10px;
-    }
-}
-
-/*------------------------------------*\
-    Footer
-\*------------------------------------*/
-
-.c-footer {
-    background-color: $color--primary;
-    color: $font-color--primary;
-
-    h5,
-    p,
-    a,
-    span {
-        color: $font-color--secondary !important;
     }
 }
