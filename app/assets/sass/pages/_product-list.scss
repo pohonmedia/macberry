@@ -1,0 +1,46 @@
+// import utilities
+@import "../util/variables";
+
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+.c-header {
+    margin-top: 100px;
+    max-height: 75vh;
+
+    img {
+        object-fit: none;
+        min-height: 700px;
+        object-position: -50% -50%;
+
+    }
+}
+
+/*------------------------------------*\
+    Product Promo
+\*------------------------------------*/
+
+.c-product-promo {
+
+    img {
+        max-height: 300px;
+        border-radius: 20px;
+        opacity: 0.5;
+    }
+
+    h4,
+    a {
+        color: $font-color--secondary !important;
+        text-transform: capitalize;
+    }
+
+    .product {
+        &-image {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+        }
+
+    }
+
+}

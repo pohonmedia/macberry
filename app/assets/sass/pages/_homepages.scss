@@ -202,19 +202,3 @@
         border-radius: 10px;
     }
 }
-
-/*------------------------------------*\
-    Footer
-\*------------------------------------*/
-
-.c-footer {
-    background-color: $color--primary;
-    color: $font-color--primary;
-
-    h5,
-    p,
-    a,
-    span {
-        color: $font-color--secondary !important;
-    }
-}

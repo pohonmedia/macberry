@@ -1,5 +1,6 @@
 // import pages section
 @import "./pages/homepages";
+@import "./pages/product-list";
 
 //import components 
 @import "./components/plugins";
@@ -20,4 +21,20 @@ body {
     font-family: $font--primary;
     font-weight: 400;
     color: $font-color--primary;
+}
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.c-footer {
+    background-color: $color--primary;
+    color: $font-color--primary;
+
+    h5,
+    p,
+    a,
+    span {
+        color: $font-color--secondary !important;
+    }
 }
