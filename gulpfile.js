@@ -16,12 +16,16 @@ const sourcemaps = require('gulp-sourcemaps');
 var bootstrapCSS = './node_modules/bootstrap/dist/css/bootstrap.min.css';
 var slickCSS = './node_modules/slick-carousel/slick/slick.css';
 var animate = './node_modules/animate.css/animate.css';
+var nicenumberCSS = './node_modules/jquery.nice-number/dist/jquery.nice-number.css';
+var magnificpopupCSS = './node_modules/magnific-popup/dist/magnific-popup.css';
 
 //asset js
 var bootstrapJS = './node_modules/bootstrap/dist/js/bootstrap.min.js';
 var jqueryJS = './node_modules/jquery/dist/jquery.min.js';
 var popperJS = './node_modules/popper.js/dist/umd/popper.min.js';
 var slickJS = './node_modules/slick-carousel/slick/slick.js';
+var nicenumberJS = './node_modules/jquery.nice-number/dist/jquery.nice-number.js';
+var magnificpopupJS = './node_modules/magnific-popup/dist/jquery.magnific-popup.js';
 
 //assets dir
 var ASSETS = {
@@ -35,7 +39,7 @@ var ASSETS = {
 
 //nunjucks dir
 var COMPILE = {
-    SRC: './app/pages/product-list.njk',
+    SRC: './app/pages/product-detail.njk',
     TMP: './app/template/',
     DST: './app/'
 };
@@ -64,7 +68,7 @@ function folder() {
 
 // moving css
 function css() {
-    return src([bootstrapCSS, animate])
+    return src([bootstrapCSS, animate, slickCSS, nicenumberCSS, magnificpopupCSS])
         .pipe(plumber({
             errorHandler: function (err) {
                 notify.onError({
@@ -85,7 +89,7 @@ function css() {
 
 // moving js
 function js() {
-    return src([jqueryJS, popperJS, bootstrapJS])
+    return src([jqueryJS, popperJS, bootstrapJS, slickJS, nicenumberJS, magnificpopupJS])
         .pipe(concat('plugin.min.js'))
         .pipe(uglify())
         .pipe(dest(ASSETS.JS))
