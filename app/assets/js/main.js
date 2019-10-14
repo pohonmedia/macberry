@@ -101,8 +101,6 @@ $(function () {
         slidesToScroll: 1,
         adaptiveHeight: true,
         arrows: true,
-        prevArrow: '<span class="prev"><i class="lni-chevron-left"></i></span>',
-        nextArrow: '<span class="next"><i class="lni-chevron-right"></i></span>',
         responsive: [
             {
                 breakpoint: 1200,
@@ -212,8 +210,8 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<span class="prev"><i class="lni-chevron-left"></i></span>',
-        nextArrow: '<span class="next"><i class="lni-chevron-right"></i></i></span>',
+        prevArrow: '<span class="prev"><i class="fas fa-arrow-left"></i></span>',
+        nextArrow: '<span class="next"><i class="fas fa-arrow-right"></i></span>',
         dots: false,
     });
 

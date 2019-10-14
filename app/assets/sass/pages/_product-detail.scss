@@ -1,0 +1,69 @@
+// import utilities
+@import "../util/variables";
+
+/*------------------------------------*\
+    Product Detail
+\*------------------------------------*/
+
+.c-product-detail {
+
+    img {
+        object-fit: cover;
+        min-height: 450px;
+        border-radius: 15px;
+    }
+
+    .regular-price {
+        font-size: 32px !important;
+        color: $font-color--primary !important;
+    }
+
+    .product-image {
+        .slick-arrow i {
+            background-color: $color--primary !important;
+            color: $font-color--secondary !important;
+        }
+    }
+
+    &-specs {
+
+        text-transform: capitalize;
+
+        p {
+            color: $font-color--primary !important;
+            opacity: 1 !important;
+        }
+
+        .nav-pills {
+            padding-top: 5px;
+
+            .nav-link.active {
+                background-color: $color--primary !important;
+                color: $font-color--secondary !important;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+                transform: translateY(-2px);
+            }
+
+            .nav-link {
+                background-color: $color--secondary !important;
+                color: $font-color--primary !important;
+            }
+
+            :first-child {
+                margin-left: 0px !important;
+            }
+
+            :last-child {
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .shop-reviews .nav .nav-item a.active {
+        background-color: $color--primary;
+        color: $font-color--secondary;
+        border-color: $color--primary;
+    }
+
+}
