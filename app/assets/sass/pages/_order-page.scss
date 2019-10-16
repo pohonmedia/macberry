@@ -1,0 +1,145 @@
+// import utilities
+@import "../util/variables";
+
+//reset card style
+@mixin orderpage-card-style {
+
+    .card {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+        border: none;
+        border-radius: 10px;
+
+        &-body {
+            padding: 16px !important;
+        }
+    }
+
+}
+
+
+/*------------------------------------*\
+   checkout tabs
+\*------------------------------------*/
+
+.c-checkout-tabs {
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: $font-color--primary;
+        font-weight: 600;
+    }
+
+    @include orderpage-card-style;
+
+}
+
+/*------------------------------------*\
+   checkout pricing
+\*------------------------------------*/
+
+.c-checkout-pricing {
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: $font-color--primary;
+        font-weight: 600;
+    }
+
+    @include orderpage-card-style;
+}
+
+/*------------------------------------*\
+   Timeline
+\*------------------------------------*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    font-size: 20px;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: $color--secondary;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background: $color--primary;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+ul.timeline {
+
+    h5 {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        padding-left: 24px;
+    }
+
+    label {
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        min-height: 45px;
+        border: unset;
+        background-color: $color--secondary;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .content {
+        padding-left: 24px;
+    }
+
+    .media {
+        img {
+            max-height: 75px;
+            object-fit: cover;
+        }
+    }
+
+    .nav-pills {
+        img {
+            min-width: 150px;
+            max-width: 150px;
+            max-height: 65px;
+            min-height: 65px;
+            object-fit: cover;
+        }
+
+        .nav-link.active {
+            background-color: transparent !important;
+            border: 0.5px dashed $color--primary;
+        }
+
+    }
+
+
+
+}
