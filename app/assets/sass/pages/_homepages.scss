@@ -202,3 +202,42 @@
         border-radius: 10px;
     }
 }
+
+
+/*------------------------------------*\
+    Responsive
+\*------------------------------------*/
+
+@media(min-width:350px) {
+
+    .c-slider-homepage {
+        margin-top: 20px;
+        max-height: 750px;
+        margin-bottom: 50px;
+    }
+
+    .single-slider .slider-product-content {
+        margin-left: 0;
+        padding: 90px 30px !important;
+    }
+
+    .single-slider .slider-product-content .slider-title {
+        font-size: 28px !important;
+    }
+
+}
+
+@media(min-width:900px) {
+
+    .c-slider-homepage {
+        margin-top: 20px;
+        max-height: 650px;
+        margin-bottom: 0px;
+    }
+
+    .single-slider .slider-product-content {
+        margin-left: 0;
+        padding: 40px 15px 50px;
+    }
+
+}
