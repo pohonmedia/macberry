@@ -1,6 +1,22 @@
 // import utilities
 @import "../util/variables";
 
+//reset card style
+@mixin orderpage-card-style {
+
+    .card {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+        border: none;
+        border-radius: 10px;
+
+        &-body {
+            padding: 16px !important;
+        }
+    }
+
+}
+
+
 /*------------------------------------*\
    checkout tabs
 \*------------------------------------*/
@@ -11,17 +27,25 @@
         font-size: 18px;
         letter-spacing: 0.5px;
         color: $font-color--primary;
-        font-weight: 400;
+        font-weight: 600;
     }
 
-    .card {
-        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
-        border: none;
+    @include orderpage-card-style;
 
-        &-body {
-            padding: 16px !important;
-        }
+}
 
+/*------------------------------------*\
+   checkout pricing
+\*------------------------------------*/
+
+.c-checkout-pricing {
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: $font-color--primary;
+        font-weight: 600;
     }
 
+    @include orderpage-card-style;
 }
