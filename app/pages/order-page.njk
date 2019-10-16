@@ -1,0 +1,55 @@
+<!-- set title -->
+{% set title = 'Order Page' %}
+{% set description = 'Order Page' %}
+
+<!-- extends from layout -->
+{% extends "layout.njk" %}
+
+<!-- contents start from here -->
+{% block content %}
+
+    <div class="container mt-150 p-5" style="background-color:#f9f9f9; border-radius:10px;">
+        <div class="row">
+
+            <!-- checkout tabs start here -->
+            <section id="checkout-tabs" class="c-checkout-tabs col-8">
+
+                <div class="card text-capitalize">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="p-2">
+                                <p>
+                                    detail produk
+                                </p>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <i class="fas fa-lg fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- checkout tabs end here -->
+
+            <!-- order pricing start here -->
+            <section id="checkoutpricing" class="c-checkout-pricing col-4">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis nobis suscipit reiciendis alias esse nesciunt nulla iure libero voluptates labore commodi, explicabo cumque est excepturi deserunt adipisci repudiandae corporis?
+
+            </section>
+            <!-- order pricing end here -->
+
+            <!-- order detail start here -->
+            <section id="order-detail" class="c-checkout-detail col-8">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis nobis suscipit reiciendis alias esse nesciunt nulla iure libero voluptates labore commodi, explicabo cumque est excepturi deserunt adipisci repudiandae corporis?
+
+            </section>
+            <!-- order detail end here -->
+
+        </div>
+    </div>
+
+{% endblock %}
+<!-- contents end here -->
