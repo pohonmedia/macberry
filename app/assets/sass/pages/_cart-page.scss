@@ -1,0 +1,58 @@
+// import utilities
+@import "../util/variables";
+
+//reset card style
+@mixin orderpage-card-style {
+
+    .card {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+        border: none;
+        border-radius: 10px;
+
+        &-body {
+            padding: 16px !important;
+        }
+    }
+
+}
+
+
+/*------------------------------------*\
+   checkout tabs
+\*------------------------------------*/
+
+
+.c-checkout-tabs {
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: $font-color--primary;
+        font-weight: 600;
+    }
+
+    @include orderpage-card-style;
+
+}
+
+@media(min-width:300px) {
+
+    .c-checkout-pricing {
+        margin-top: 20px;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(min-width:1000px) {
+    .c-checkout-tabs {
+        margin-top: unset;
+    }
+
+    img {
+        margin-bottom: unset;
+    }
+}
