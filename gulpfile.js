@@ -39,7 +39,7 @@ var ASSETS = {
 
 //nunjucks dir
 var COMPILE = {
-    SRC: './app/pages/product-detail.njk',
+    SRC: './app/pages/cart-page.njk',
     TMP: './app/template/',
     DST: './app/'
 };
